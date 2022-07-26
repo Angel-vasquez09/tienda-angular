@@ -1,0 +1,10 @@
+.blur{
+  position: absolute;
+  width: 100px;
+  height: 1000px;
+  left: calc(50% - 100px/2);
+  top: calc(80% - 1000px);
+  background-color: #EF3651;
+  filter: blur(100px);
+  transform: rotate(20deg);
+}

@@ -1,0 +1,16 @@
+<div class="pl-2 my-8 relative">
+  <div [ngClass]="totalScroll <= 0 ? 'hidden' : 'hidden md:flex'" class="absolute h-full w-14 left-0 top-0 justify-center items-center">
+    <button (click)="left()" class="w-12 h-12 bg-transparent border-2 border-primary text-primary rounded-full text-xl">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+  </div>
+  <h2 class="text-3xl text-white font-bold ml-2 my-2">Recomendados</h2>
+  <div #scroll2 class="snap-x flex overflow-x-scroll scroll">
+    <app-card class="snap-start" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]"></app-card>
+  </div>
+  <div [ngClass]="totalScroll >= scrollWidth ? 'hidden' : 'hidden md:flex'" class="absolute h-full w-14 right-0 top-0 justify-center items-center">
+    <button (click)="right()" class="w-12 h-12 bg-transparent border-2 border-primary text-primary rounded-full text-xl">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+  </div>
+</div>

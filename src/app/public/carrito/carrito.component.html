@@ -1,0 +1,44 @@
+<app-nav-return nombre="Carrito"></app-nav-return>
+<main class="px-2 pt-24 pb-10 h-auto relative z-40">
+  <!-- LISTA DE PRODUCTOS EN EL CARRITO -->
+  <div class="flex flex-col h-80 overflow-y-scroll scroll">
+    <!-- PRODUCTO -->
+    <div *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]" class="my-2 flex justify-between items-center w-full">
+      <!-- DETALLES DEL PRODUCTO -->
+      <div  class="w-[90%] h-16 flex justify-between items-center p-2 shadow-2xl border border-[#393a3b] bg-terceary rounded-xl">
+        <div class="flex items-center h-full">
+            <div class="w-[50px] h-full rounded-lg bg-white mr-2"></div>
+            <div class="flex flex-col">
+              <h2 class="text-white text-sm font-bold">Titulo</h2>
+              <h3 class="text-xs text-white">$20.000</h3>
+            </div>
+        </div>
+
+        <!-- CONTADOR DEL PRODUCTO -->
+        <app-counter></app-counter>
+      </div>
+
+      <!-- ICONO DE ELIMINAR PRODUCTO DEL CARRITO -->
+      <button class="bg-transparent text-2xl text-primary">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- DETALLES DEL CARRITO DE COMPRAS -->
+  <div class="w-full h-40 flex flex-col items-center justify-center shadow-2xl border border-[#FF8294] bg-primary mt-4 rounded-lg p-3">
+    <div class="w-full flex justify-between items-center">
+      <h1 class="text-white font-bold">Subtotal</h1>
+      <h2 class="text-md text-white">$10.000</h2>
+    </div>
+    <div class="w-full flex justify-between items-center mt-4">
+      <h1 class="text-white font-bold">Total</h1>
+      <h2 class="text-md text-white">$10.000</h2>
+    </div>
+
+    <button class="bg-white text-primary border-2 border-transparent hover:border-white hover:bg-transparent hover:text-white font-bold py-2 mt-3 w-full rounded-xl">Place my order</button>
+  </div>
+</main>
+<div class="blur2"></div>

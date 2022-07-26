@@ -1,0 +1,32 @@
+<app-nav-return nombre="Find your Food"></app-nav-return>
+<main class="h-auto min-h-screen px-3 pt-16 pb-20">
+
+  <!-- INPUT DE BUSQUEDA -->
+  <div class="w-full h-12 bg-terceary rounded-lg relative">
+    <input
+      class="pl-2 pr-10 border-0 outline-none bg-transparent h-full w-full text-white font-bold"
+      type="text"
+      placeholder="Search..."
+      name=""
+      id=""
+    >
+    <button class="w-8 h-8 hover:bg-primary hover:text-white rounded-full text-primary absolute right-2 top-2">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+
+  <hr class="my-5 border border-terceary">
+
+  <!-- LISTA DE PRODUCTOS ENCONTRADOS -->
+  <div class="w-full h-full flex flex-col">
+    <!-- CARD DE PRODUCTOS ENCONTRADOS -->
+    <div *ngFor="let item of [1,1,1,1,1,1,1,1,1,1]" class="w-full h-14 p-2 my-2 flex justify-between items-center bg-terceary border border-[#393a3b] rounded-xl">
+      <div class="flex h-full items-center">
+        <div class="w-[50px] h-full rounded-sm bg-white mr-2"></div>
+        <h2 class="text-lg text-white font-bold">Pizza</h2>
+      </div>
+      <h2 class="text-white font-bold text-base">$10.000</h2>
+    </div>
+  </div>
+</main>
+<app-tabs></app-tabs>

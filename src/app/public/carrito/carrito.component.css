@@ -1,0 +1,9 @@
+.blur2{
+  position: absolute;
+  width: 100px;
+  right: 209px;
+  top: 100px;
+  height: 100px;
+  background-color: #EF3651;
+  filter: blur(77px);
+}

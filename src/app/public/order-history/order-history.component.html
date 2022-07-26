@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<main class="px-2 pt-24 pb-10 h-auto relative z-40">
+  <!-- LISTA DE PRODUCTOS EN EL CARRITO -->
+  <div class="flex flex-col h-80 overflow-y-scroll scroll">
+    <!-- PRODUCTO -->
+    <div *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]" class="my-2 flex justify-between items-center w-full">
+      <!-- DETALLES DEL PRODUCTO -->
+      <div  class="w-full h-16 flex justify-between items-center p-2 shadow-2xl border border-[#393a3b] bg-terceary rounded-xl">
+        <div class="flex items-center h-full">
+            <div class="w-[50px] h-full rounded-sm bg-white mr-2"></div>
+            <div class="flex flex-col">
+              <h2 class="text-white text-sm font-bold">Titulo</h2>
+              <h3 class="text-xs text-white">$20.000</h3>
+            </div>
+        </div>
+
+        <!-- CONTADOR DEL PRODUCTO -->
+        <div class="h-6 w-auto flex justify-center items-center rounded-full px-2 bg-green-600 text-white font-bold text-sm">Procesando</div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+<app-tabs></app-tabs>

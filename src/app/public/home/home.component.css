@@ -1,0 +1,13 @@
+
+.blur{
+  position: fixed;
+  width: 200px;
+  right: -76px;
+  top: 200px;
+  height: 200px;
+  background-color: #EF3651;
+  filter: blur(122px);
+}
+
+/* left: calc(50% - 100px/2);
+top: calc(80% - 1000px); */

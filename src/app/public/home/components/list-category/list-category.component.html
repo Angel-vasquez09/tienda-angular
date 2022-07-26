@@ -1,0 +1,8 @@
+<div class="pl-2 my-10">
+  <div class="flex overflow-x-scroll scroll">
+    <app-card-category
+      *ngFor="let item of categorias; let i=index" [index]="i" [categoria]="item"
+    >
+    </app-card-category>
+  </div>
+</div>
